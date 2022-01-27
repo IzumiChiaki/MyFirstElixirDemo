@@ -7,10 +7,15 @@ defmodule DemoTest do
   end
 
   test "hello the world" do
-    Demo.helloWorld()
+    Demo.hello_world()
   end
 
   test "is same chars" do
-    IO.gets(Demo.isSameChar("21hel", "1e2hl"))
+    IO.gets(Demo.is_same_char("21hel", "1e2hl"))
   end
+
+  test "upcase" do
+    Demo.upcase(["practice", "makes", "perfect"])
+  end
+
 end
